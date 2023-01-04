@@ -10,14 +10,14 @@ function showMatch(event) {
 
   matchResult.innerHTML = `${personOne} & ${personTwo} have a love match of ${matchResults}%`;
 
-  //   if (matchResult >= 80) {
-  //     resultMessage.innerHTML = `${personOne} & ${personTwo} are a perfect match!`;
-  //   }
-  //   if (matchResult < 30) {
-  //     resultMessage.innerHTML = `${personOne} & ${personTwo} are not a perfect match!`;
-  //   } else {
-  //     resultMessage`${personOne} & ${personTwo} are an adaquate match.`;
-  //   }
+  if (matchResult >= 80) {
+    resultMessage.innerHTML = `${personOne} & ${personTwo} are a perfect match!`;
+  }
+  if (matchResult < 30) {
+    resultMessage.innerHTML = `${personOne} & ${personTwo} are not a perfect match!`;
+  } else {
+    resultMessage`${personOne} & ${personTwo} are an adaquate match.`;
+  }
 }
 
 button.addEventListener("submit", showMatch);
